@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Answers</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #ccd1d1;
+			color: #5d6d7e;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		ul,
+		ol {
+			list-style: none;
+		}
+
+		.content>ol {
+			margin: 0;
+			padding: 0;
+		}
+
+		span {
+			font-weight: bold;
+		}
+
+		.comment__box {
+			margin: 20px;
+		}
+
+		.comment__image {
+			position: relative;
+			width: 50px;
+			height: 50px;
+			padding: 5px;
+			margin-right: 10px;
+			background-color: #fff;
+			float: left;
+		}
+
+		.comment__text {
+			border-radius: 10px;
+			background-color: #fff;
+			padding: 10px;
+			display: inline-block;
+
+		}
+
+		.list__answers {
+			padding: 0;
+			margin: 0;
+		}
+
+		ul li>div.comment__box {
+			margin-left: 90px;
+		}
+
+		ul li div>div.comment__text {
+			width: 650px;
+		}
+
+		.line::after {
+			content: "";
+			display: block;
+			position: absolute;
+			background-color: #AEB6BF;
+			width: 1px;
+			height: 395px;
+			top: 60px;
+			left: 30px;
+		}
+
+		.triangle::before {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			top: 25px;
+			left: -10px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 5px 0 5px 10px;
+			border-color: transparent transparent transparent #AEB6BF;
+		}
+
+		.triangle-line::after {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			background-color: #AEB6BF;
+			top: 29px;
+			left: -40px;
+			height: 1px;
+			width: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="content">
+		<ol>
+			<li>
+				<div class="comment__box ">
+					<div class="comment__image line">
+						<img src="https://placehold.jp/353536/ffffff/50x50.png" alt="">
+					</div>
+					<div class="comment__text">
+						<p class="comment_title"><span class="comment_username">User1231231</span> спрашивает:</p>
+						<p class="comment_body">Почему во многих макетах и тестовых заданиях используется текст "Lorem ipsum dolor
+							sit amet"?</p>
+					</div>
+				</div>
+				<ul class="list__answers">
+					<li>
+						<div class="comment__box ">
+							<div class="comment__image triangle triangle-line">
+								<img src="https://placehold.jp/353536/ffffff/50x50.png" alt="">
+							</div>
+							<div class="comment__text">
+								<p class="comment_title"><span class="comment_username">User444</span> отвечает:</p>
+								<p class="comment_body">Аннотация. <br> Фраза "Lorem ipsum dolor sit amet" впервые появилась в справке
+									Microsoft Word. Фраза производит впечатление осмысленной латинской поговорки. На самом деле это не
+									так. </p>
+					</li>
+					<li>
+						<div class="comment__box ">
+							<div class="comment__image triangle triangle-line">
+								<img src="https://placehold.jp/353536/ffffff/50x50.png" alt="">
+							</div>
+							<div class="comment__text">
+								<p class="comment_title"><span class="comment_username">User8678678</span> отвечает:</p>
+								<p class="comment_body">Lorem Ipsum Dolor sit amet. =)))</p>
+					</li>
+					<li>
+						<div class="comment__box ">
+							<div class="comment__image triangle triangle-line">
+								<img src="https://placehold.jp/353536/ffffff/50x50.png" alt="">
+							</div>
+							<div class="comment__text">
+								<p class="comment_title"><span class="comment_username">User1234567</span> отвечает:</p>
+								<p class="comment_body">Хоть фраза и бессмысленна, она имеет давнюю историю. Фраза использовалась
+									печатниками многие столетия для демонстрации наиболее важных особенностей своих шрифтов. Она
+									использовалась потому, что символы состовляют сложные по межсимвольным промежуткам и по комбинациям
+									символов пары, наилучшим образом демонстрирующие преимущества данного начертания.</p>
+					</li>
+				</ul>
+			</li>
+		</ol>
+	</div>
+
+</html>
